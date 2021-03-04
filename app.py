@@ -15,7 +15,7 @@ path = os.path.join(pre, fname)
 #url = 'https://raw.githubusercontent.com/luishernand/crypto_analysis/main/data/crypto_data.csv'
 @st.cache
 def load_dataset():
-	df = pd.read_excel(path)
+	df = pd.read_excel('crypto_data.xlsx')
 	#df = df.set_index(pd.Datetimeindex('Date')
 	#df.set_index(pd.DatetimeIndex('Date'), inplace=True)
 	return df

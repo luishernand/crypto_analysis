@@ -10,6 +10,5 @@
 
 ## Web Documnets:
 
-1- [Dogecoin EDA](https://nbviewer.jupyter.org/github/luishernand/crypto_analysis/blob/main/Dogecoin%20Analysis.ipynb)
-
-1- [crypto web app ](https://crypto-analysys.herokuapp.com/)
+1. [Dogecoin EDA](https://nbviewer.jupyter.org/github/luishernand/crypto_analysis/blob/main/Dogecoin%20Analysis.ipynb)
+2. [crypto web app ](https://crypto-analysys.herokuapp.com/)

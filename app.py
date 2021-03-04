@@ -3,15 +3,19 @@ import pandas as pd
 import numpy as np
 import matplotlib as plt
 import seaborn as sns
+import os
 from sklearn.preprocessing import MinMaxScaler
 st.set_option('deprecation.showPyplotGlobalUse', False)
 import streamlit.components.v1 as stc
 #--------------------------------#
 #Utils 
+pre = os.path.dirname(os.path.realpath(__file__))
+fname = 'crypto_data.xlsx'
+path = os.path.join(pre, fname)
 #url = 'https://raw.githubusercontent.com/luishernand/crypto_analysis/main/data/crypto_data.csv
 @st.cache
 def load_dataset():
-	df = pd.read_excel('crypto_data.xlsx', sheet_name='data')
+	df = pd.read_excel(path, sheet_name='data')
 	#df = df.set_index(pd.Datetimeindex('Date')
 	#df.set_index(pd.DatetimeIndex('Date'), inplace=True)
 	return df

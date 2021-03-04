@@ -38,7 +38,7 @@ st.markdown('''
 #-----------------------------------------------------------------#
 #main
 df= load_dataset()
-df.set_index(pd.DatetimeIndex('Date'), inplace=True)
+df.set_index(pd.DatetimeIndex(df['Date']), inplace=True)
 
 
 menu = ['Analysis', 'Visualizations']

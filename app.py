@@ -12,7 +12,8 @@ import streamlit.components.v1 as stc
 @st.cache
 def load_dataset():
 	df = pd.read_csv('https://raw.githubusercontent.com/luishernand/crypto_analysis/main/data/crypto_data.csv')
-	df.set_index(pd.DatetimeIndex(df.Date), inplace=True)
+	#df = df.set_index(pd.Datetimeindex('Date')
+	df.set_index(pd.DatetimeIndex('Date'), inplace=True)
 	return df
 
 #-------------------------------------------------#

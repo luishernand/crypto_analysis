@@ -13,7 +13,7 @@ import streamlit.components.v1 as stc
 #fname = 'crypto_data.xlsx'
 #path = os.path.join(pre, fname)
 url = 'https://raw.githubusercontent.com/luishernand/crypto_analysis/main/data/crypto_data.csv'
-@st.cache
+#@st.cache
 def load_dataset():
 	df = pd.read_csv(url)
 	#df = df.set_index(pd.Datetimeindex('Date')

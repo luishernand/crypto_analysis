@@ -11,7 +11,7 @@ import streamlit.components.v1 as stc
 
 @st.cache
 def load_dataset():
-	df = pd.read_excel('crypto_data.xlsx', sheet_name='data')
+	df = pd.read_excel('crypto_data.csv')
 	df.set_index('Date', inplace=True)
 	return df
 

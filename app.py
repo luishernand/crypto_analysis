@@ -8,10 +8,10 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 import streamlit.components.v1 as stc
 #--------------------------------#
 #Utils 
-
+#url = 'https://raw.githubusercontent.com/luishernand/crypto_analysis/main/data/crypto_data.csv
 @st.cache
 def load_dataset():
-	df = pd.read_excel('https://raw.githubusercontent.com/luishernand/crypto_analysis/main/data/crypto_data.csv')
+	df = pd.read_csv('https://raw.githubusercontent.com/luishernand/crypto_analysis/main/data/crypto_data.csv')
 	df.set_index('Date', inplace=True)
 	return df
 

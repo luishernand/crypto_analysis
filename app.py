@@ -12,7 +12,7 @@ import streamlit.components.v1 as stc
 pre = os.path.dirname(os.path.realpath(__file__))
 fname = 'crypto_data.xlsx'
 path = os.path.join(pre, fname)
-url = 'https://raw.githubusercontent.com/luishernand/crypto_analysis/main/data/crypto_data.csv
+#url = 'https://raw.githubusercontent.com/luishernand/crypto_analysis/main/data/crypto_data.csv'
 @st.cache
 def load_dataset():
 	df = pd.read_excel(path)
